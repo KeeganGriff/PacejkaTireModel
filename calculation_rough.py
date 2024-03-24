@@ -25,7 +25,7 @@ df = pd.read_csv("B2356raw5.csv", sep='\t', skiprows=[0,2], usecols=['SA', 'FY']
 
 # getting max abs val from lateral force values
 D = df['FY'].abs().max()
-
+print("D: ", D)
 # don't have line to calc asymptote yet, so will round D down and use that for now
 Ya = math.floor(D)
 C = 1.3 # pacejka model specifies this as the shape for lateral force?
