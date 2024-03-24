@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Import data from current directory
-file = 'B2356raw9.csv'
+file = 'B2356raw5.csv'
 df = pd.read_csv(file)
 
 # Set first row as column names
